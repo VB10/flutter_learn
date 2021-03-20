@@ -5,7 +5,6 @@ import 'package:flutter/widgets.dart';
 
 class WelcomeView extends StatelessWidget {
   final _appBarTitle = 'Instagram';
-
   final _randomImageUrl = 'https://picsum.photos/200/300';
 
   MaterialColor get randomColor => Colors.primaries[Random().nextInt(17)];
