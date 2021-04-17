@@ -25,5 +25,6 @@ class LightTheme extends ITheme {
           onPrimary: colors.lynch,
           onSecondary: colors.catSkillWhite,
         ),
+        tabBarTheme: TabBarTheme(labelColor: Colors.black, unselectedLabelColor: colors.bitterSweet),
       );
 }
