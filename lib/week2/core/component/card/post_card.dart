@@ -17,17 +17,21 @@ class _PostCardState extends State<PostCard> {
   Widget build(BuildContext context) {
     return Card(
       color: isTouch ? Colors.red : Colors.white,
-      child: ListTile(
-        onTap: () {
-          setState(() {
-            isTouch = !isTouch;
-          });
-        },
-        leading: CircleAvatar(
-          child: buildText(),
-        ),
-        title: Text(widget.model?.title ?? ""),
+      child: buildListTile(),
+    );
+  }
+
+  ListTile buildListTile() {
+    return ListTile(
+      onTap: () {
+        setState(() {
+          isTouch = !isTouch;
+        });
+      },
+      leading: CircleAvatar(
+        child: buildText(),
       ),
+      title: Text(widget.model?.title ?? ""),
     );
   }
 
